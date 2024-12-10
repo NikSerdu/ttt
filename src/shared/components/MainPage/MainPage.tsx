@@ -42,7 +42,7 @@ const metricLabels = [
 	'Отзывчивость',
 ]
 
-export const Main: FC = (props: { disableCustomTheme?: boolean }) => {
+export const MainPage: FC = (props: { disableCustomTheme?: boolean }) => {
 	const {
 		handleSubmit,
 		control,

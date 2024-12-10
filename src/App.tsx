@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
-import { Main } from './shared/components/Main/Main'
+import { MainPage } from './shared/components/MainPage/MainPage'
 import { SignIn } from './shared/components/SignIn/SignIn'
 import { Dashboard } from './shared/components/dashboard/Dashboard'
 import { ChannelMessages } from './shared/components/dashboard/components/ChannelMessages'
@@ -13,7 +13,7 @@ function App() {
 	return (
 		<Routes>
 			<Route path='/'>
-				<Route path='' element={<Main />} />
+				<Route path='' element={<MainPage />} />
 				<Route path='auth' element={<SignIn />} />
 				<Route path='dashboard' element={<Dashboard />}>
 					<Route path='main' element={<Channels />} />
