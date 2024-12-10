@@ -13,6 +13,7 @@ import * as React from 'react'
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 import AppTheme from '../../theme/shared-theme/AppTheme'
+import ToBack from '../ui/ToBack'
 import ForgotPassword from './ForgotPassword'
 
 const Card = styled(MuiCard)(({ theme }) => ({
@@ -119,6 +120,7 @@ export const SignIn: FC = (props: { disableCustomTheme?: boolean }) => {
 				{/* <ColorModeSelect
 					sx={{ position: 'fixed', top: '1rem', right: '1rem' }}
 				/> */}
+				<ToBack />
 				<Card variant='outlined'>
 					<Typography
 						component='h1'
@@ -165,7 +167,6 @@ export const SignIn: FC = (props: { disableCustomTheme?: boolean }) => {
 								type='password'
 								id='password'
 								autoComplete='current-password'
-								autoFocus
 								required
 								fullWidth
 								variant='outlined'
