@@ -15,14 +15,10 @@ import SideMenu from './components/SideMenu'
 import {
 	chartsCustomizations,
 	dataGridCustomizations,
-	datePickersCustomizations,
-	treeViewCustomizations,
 } from './theme/customizations'
 const xThemeComponents = {
 	...chartsCustomizations,
 	...dataGridCustomizations,
-	...datePickersCustomizations,
-	...treeViewCustomizations,
 }
 
 export const Dashboard: FC = (props: { disableCustomTheme?: boolean }) => {

@@ -1,11 +1,11 @@
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
-import { MainGrid } from '../components/dashboard/components/MainGrid'
+import { Channels } from '../components/dashboard/components/Channels'
 
 export const mainListItems = [
 	{
 		text: 'Главная',
 		icon: <HomeRoundedIcon />,
-		content: <MainGrid />,
+		content: <Channels />,
 		href: 'main',
 	},
 	// {

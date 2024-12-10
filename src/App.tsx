@@ -2,9 +2,10 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { SignIn } from './shared/components/SignIn/SignIn'
 import { Dashboard } from './shared/components/dashboard/Dashboard'
+import { ChannelMessages } from './shared/components/dashboard/components/ChannelMessages'
 import { ChannelPage } from './shared/components/dashboard/components/ChannelPage'
-import Channels from './shared/components/dashboard/components/Channels'
-import { MainGrid } from './shared/components/dashboard/components/MainGrid'
+import { ChannelUsers } from './shared/components/dashboard/components/ChannelUsers'
+import { Channels } from './shared/components/dashboard/components/Channels'
 import { Main } from './shared/components/main/Main'
 
 function App() {
@@ -14,9 +15,13 @@ function App() {
 				<Route path='' element={<Main />} />
 				<Route path='auth' element={<SignIn />} />
 				<Route path='dashboard' element={<Dashboard />}>
-					<Route path='main' element={<MainGrid />} />
-					<Route path='channels' element={<Channels />} />
-					<Route path='channel/:id' element={<ChannelPage />} />
+					<Route path='main' element={<Channels />} />
+					<Route path='channel/:channelId' element={<ChannelPage />} />
+					<Route path='channel/:channelId/users' element={<ChannelUsers />} />
+					<Route
+						path='channel/:channelId/messages'
+						element={<ChannelMessages />}
+					/>
 				</Route>
 			</Route>
 		</Routes>
