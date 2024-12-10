@@ -1,0 +1,12 @@
+.apexcharts-tooltip,
+.apexcharts-tooltip-title {
+	background: black !important;
+	color: white !important;
+}
+
+a {
+	outline: none;
+	border: none;
+	text-decoration: none;
+	color: white;
+}
