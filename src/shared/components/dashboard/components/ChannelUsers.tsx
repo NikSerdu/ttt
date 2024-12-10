@@ -15,10 +15,10 @@ import {
 	Typography,
 } from '@mui/material'
 import { FC, useState } from 'react'
+import Chart from 'react-apexcharts'
 import { generateRandomMetrics } from '../../../../utils/generateRandomMetrics'
 import { UserMetrics } from '../../../types/userMetrics.type'
 import ToBack from '../../ui/ToBack'
-
 const users = [
 	{ id: 1, name: 'John' },
 	{ id: 2, name: 'Jane' },
